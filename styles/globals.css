@@ -1,0 +1,127 @@
+:root {
+  --text-color-main: rgba(0, 0, 0, 0.8);
+  --text-color-light: rgba(0, 0, 0, 0.4);
+  --background-color: #fffffc;
+  --fonts: 'Andale Mono', 'Courier Prime Code', Garamond, sans-serif;
+}
+
+
+html {
+    font-family: var(--fonts);
+    color: var(--text-color-main);
+    line-height: 1.5em;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+body {
+    margin: 0;
+    font-size: 15px;
+    background-color: var(--background-color);
+}
+body .content {
+    margin-bottom: 120px;
+}
+a {
+    color: var(--text-color-main);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--text-color-light);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Courier, Garamond, sans-serif;
+}
+
+.wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 10px;
+  }
+
+.nav a {
+    color: var(--text-color-main);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding-left: 2em;
+}
+
+.about ul li:before {
+    content: ">>";
+    color: grey;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+.about a {
+    text-decoration: none;
+}
+
+.about a:hover {
+    font-weight: bold;
+}
+
+.posts {
+    font-size: 15px;
+    line-height: 1.6em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.post .post-title {
+    line-height: 50%;
+}
+
+.post .post-date {
+    line-height: 80%;
+}
+
+.post-date {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.post-head {
+    border-bottom: 0.1rem solid;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        margin: 0 18px;
+    }
+
+    .wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+};
